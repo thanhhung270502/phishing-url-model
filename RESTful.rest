@@ -1,0 +1,10 @@
+###
+POST http://127.0.0.1:5000/api/v1/phishingURL HTTP/1.1
+content-type: application/json
+
+{ 
+    "url": "http://shadetreetechnology.com/V4/validation/a111aedc8ae390eabcfa130e041a10a4"
+}
+
+###
+GET http://127.0.0.1:5000/api/v1/phishingURL
