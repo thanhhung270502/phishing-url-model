@@ -1,10 +1,12 @@
 import pickle
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
+from flask_cors import CORS
 import encode_sample
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 parser = reqparse.RequestParser()
 parser.add_argument("url")
